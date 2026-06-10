@@ -371,24 +371,24 @@ section a:hover {
     .stars {
         text-align: left;
     }
+}
 
-    .quick-links {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-    }
+.quick-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
 
-    .quick-links a {
-        padding: 0.8rem 1.2rem;
-        border-radius: 999px;
-        background: rgba(0, 178, 255, 0.12);
-        border: 1px solid rgba(0, 178, 255, 0.18);
-        text-decoration: none;
-        font-weight: 600;
-    }
+.quick-links a {
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: rgba(0, 178, 255, 0.12);
+    border: 1px solid rgba(0, 178, 255, 0.18);
+    text-decoration: none;
+    font-weight: 600;
+}
 
-    .quick-links a:hover {
-        background: rgba(0, 178, 255, 0.22);
-    }
+.quick-links a:hover {
+    background: rgba(0, 178, 255, 0.22);
 }
