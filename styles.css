@@ -292,6 +292,64 @@ section a:hover {
     text-decoration: underline;
 }
 
+
+/* ===== Page Compétences : cartes avec étoiles ===== */
+
+.intro-competences {
+    margin-bottom: 1.8rem;
+}
+
+.competence-category {
+    display: grid;
+    gap: 0.9rem;
+    margin: 0;
+    padding: 1rem 1.1rem 1.35rem;
+}
+
+.skill-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    background: rgba(243, 250, 255, 0.9);
+    border: 1px solid rgba(120, 197, 235, 0.14);
+}
+
+.skill-card h3 {
+    margin: 0 0 0.25rem;
+    color: #0f2d47;
+    font-size: 1.05rem;
+}
+
+.skill-card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.stars {
+    min-width: 7.5rem;
+    text-align: right;
+    color: #0ca7ff;
+    font-size: 1.25rem;
+    letter-spacing: 0.08rem;
+    white-space: nowrap;
+}
+
+.legend {
+    margin-top: 1.8rem;
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    background: rgba(238, 252, 255, 0.94);
+    border: 1px solid rgba(71, 170, 212, 0.18);
+}
+
+.legend p {
+    margin: 0.35rem 0;
+}
+
 @media (max-width: 760px) {
     nav {
         padding: 0.9rem 1rem;
@@ -304,5 +362,33 @@ section a:hover {
 
     section {
         padding: 1.4rem;
+    }
+
+    .skill-card {
+        grid-template-columns: 1fr;
+    }
+
+    .stars {
+        text-align: left;
+    }
+
+    .quick-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .quick-links a {
+        padding: 0.8rem 1.2rem;
+        border-radius: 999px;
+        background: rgba(0, 178, 255, 0.12);
+        border: 1px solid rgba(0, 178, 255, 0.18);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .quick-links a:hover {
+        background: rgba(0, 178, 255, 0.22);
     }
 }
